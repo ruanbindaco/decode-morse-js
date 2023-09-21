@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/decodeMorseCode.js"></script>
+    <title>Morse Decoder</title>
+</head>
+<body>
+    <div>
+        <h2>Morse Decoder</h2>
+        <div>
+            <input type="text" name="morseCode" id="morseCode" onkeydown="allowDotAndHyphen(event)" />
+            <button type="button" id="buttonDecode" onclick="decodeMorse()">Translate</button>
+            <button type="button" id="buttonClear" disabled onclick="onClear()">Clear</button>
+        </div>
+        <div style="display: none;" id="errorMessage">Invalid Morse Code</div>
+        <div>
+            Result: <div id="result"></div>
+        </div>
+    </div>
+</body>
+</html>
