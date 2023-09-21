@@ -40,3 +40,7 @@ function decodeMorse(morseCode) {
 
     return morseCode.split('   ').map(elem => elem.split(' ').map(e => ref[e]).join('')).join(' ');
 }
+
+const callTest = decodeMorse('.. - ...   .-- --- .-. -.- .. -. --.')
+
+console.log(callTest)
