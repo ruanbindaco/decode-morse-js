@@ -1,0 +1,22 @@
+table, td, th {
+    border: 1px solid;
+    padding: 5px;
+    text-align: center;
+}
+
+td {
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    padding: 0 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tbody {
+    display: flex;
+}

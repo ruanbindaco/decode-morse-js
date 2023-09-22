@@ -70,6 +70,7 @@ function validateMorseCode(input) {
 
 function decodeMorse() {
     let morseCode = document.getElementById('morseCode').value;
+    document.getElementById("result").innerText = "";
 
     if (morseCode !== "") {
         const ref = alphaMorse();
